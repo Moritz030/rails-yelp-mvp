@@ -5,7 +5,7 @@
     <p class="card-text">Address: <%= @restaurant.address %></p>
     <p class="card-text">Phone Number: <%= @restaurant.phone_number %></p>
     <%= link_to "All Restaurants", restaurants_path, class: "card-link" %>
-    <%= link_to "Create Restaurant", new_restaurant_path, class: "card-link" %>
+    <%= link_to "Create Review", new_restaurant_review_path(@restaurant), class: "card-link" %>
   </div>
 </div>
 
@@ -13,8 +13,8 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Review:</h5>
-    <p class="card-text">Rating: <%= review.content %></p>
-    <p class="card-text">Address: <%= review.rating %></p>
+    <p class="card-text">Content: <%= review.content %></p>
+    <p class="card-text">Rating: <%= review.rating %></p>
   </div>
 </div>
 <% end %>
