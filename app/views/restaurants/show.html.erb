@@ -1,5 +1,12 @@
-<h1>Name: <%= @restaurant.name %></h1>
-<h2>Category <%= @restaurant.category %></h2>
-<p>Address: <%= @restaurant.address %></p>
-<p>Phone Number: <%= @restaurant.phone_number %></p>
-<hr>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Name: <%= @restaurant.name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Category <%= @restaurant.category %></h6>
+    <p class="card-text">Address: <%= @restaurant.address %></p>
+    <p class="card-text">Phone Number: <%= @restaurant.phone_number %></p>
+    <%= link_to "All Restaurants", restaurants_path, class: "card-link" %>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+Comments:
