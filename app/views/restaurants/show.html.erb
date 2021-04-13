@@ -9,4 +9,12 @@
   </div>
 </div>
 
-Comments:
+<% @restaurant.reviews.each do |review| %>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Review:</h5>
+    <p class="card-text">Rating: <%= review.content %></p>
+    <p class="card-text">Address: <%= review.rating %></p>
+  </div>
+</div>
+<% end %>
