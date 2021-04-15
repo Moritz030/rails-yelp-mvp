@@ -5,7 +5,6 @@
     <p class="card-text">Address: <%= @restaurant.address %></p>
     <p class="card-text">Phone Number: <%= @restaurant.phone_number %></p>
     <%= link_to "All Restaurants", restaurants_path, class: "card-link" %>
-    <%= link_to "Create Review", new_restaurant_review_path(@restaurant), class: "card-link" %>
   </div>
 </div>
 
@@ -18,3 +17,5 @@
   </div>
 </div>
 <% end %>
+
+<%= render "/reviews/form" %>
